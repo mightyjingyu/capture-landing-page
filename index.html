@@ -2,81 +2,113 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>김치찜 - 캡쳐 정리 & 제휴 쇼핑 앱</title>
+  <title>김치찜 - 캡쳐 정리 & 쇼핑 연결</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: 'Noto Sans KR', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       background: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background: #ff4d4f;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    h1 {
-      text-align: center;
+    h2 {
       color: #ff4d4f;
+      margin-top: 0;
     }
-    .feature {
-      margin: 20px 0;
+    ul {
+      padding-left: 20px;
+    }
+    .product-box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .product-box img {
+      width: 120px;
+      border-radius: 8px;
+    }
+    .product-info {
+      flex: 1;
+    }
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #ff4d4f;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
     }
     footer {
       text-align: center;
-      margin: 40px 0;
-      color: #888;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>김치찜</h1>
-    <p>캡쳐를 정리하고, 필요한 순간 바로 찾아주는 앱</p>
+    <p>캡쳐를 정리하고, 필요한 순간 쇼핑으로 연결해주는 앱</p>
   </header>
 
   <section>
     <h2>앱 소개</h2>
     <p>
-      <strong>김치찜</strong>은 사용자가 저장한 캡쳐 이미지를 자동으로 분류하고,  
-      일정/학습/재미/증빙 등 다양한 카테고리로 정리해줍니다.  
-      특히 <strong>의류/제품 카테고리</strong>에서는 쿠팡 파트너스 API와 연동하여  
+      김치찜은 사용자의 캡쳐 이미지를 자동으로 분류하고,
+      일정/학습/재미/증빙 등 다양한 카테고리로 정리해줍니다.
+      특히 <strong>의류/제품 카테고리</strong>에서는 쿠팡 파트너스 API와 연동하여
       관련 상품을 바로 확인할 수 있는 링크를 제공합니다.
     </p>
 
-    <div class="feature">
-      <h3>주요 기능</h3>
-      <ul>
-        <li>캡쳐 이미지 자동 분류</li>
-        <li>기한 임박 알림 기능</li>
-        <li>의류/제품 → 쿠팡 상품 링크 제공</li>
-        <li>사용자 친화적인 갤러리형 인터페이스</li>
-      </ul>
-    </div>
+    <h2>주요 기능</h2>
+    <ul>
+      <li>캡쳐 이미지 자동 분류</li>
+      <li>기한 임박 알림</li>
+      <li>의류/제품 → 쿠팡 제휴상품 연결</li>
+      <li>사용자 친화적 갤러리 인터페이스</li>
+    </ul>
+  </section>
 
-    <div class="feature">
-      <h3>현재 상태</h3>
-      <p>
-        김치찜은 현재 개발 중이며, iOS/Android 앱으로 곧 출시될 예정입니다.  
-        이 페이지는 쿠팡 파트너스 매체 등록을 위한 공식 안내 페이지입니다.
-      </p>
+  <section>
+    <h2>추천 상품 (쿠팡 제휴링크 예시)</h2>
+    <div class="product-box">
+      <img src="https://thumbnail9.coupangcdn.com/thumbnails/remote/120x120ex/image/product/image.jpg" alt="쿠팡 상품">
+      <div class="product-info">
+        <h3>제주 삼다수 2L, 12개입</h3>
+        <p>합리적인 가격의 생수, 많은 사람들이 선택한 베스트셀러!</p>
+        <a class="buy-btn" href="https://link.coupang.com/a/XXXXX" target="_blank">쿠팡에서 보기</a>
+      </div>
     </div>
   </section>
 
   <footer>
-    © 2025 김치찜 | 개발자: 이진규
+    © 2025 김치찜 | 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.
   </footer>
 </body>
 </html>
